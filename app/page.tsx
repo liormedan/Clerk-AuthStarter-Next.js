@@ -10,7 +10,6 @@ import {
   Stack,
   Paper,
 } from "@mui/material";
-import Grid2 from "@mui/material/Grid2";
 import {
   SignInButton,
   SignUpButton,
@@ -179,127 +178,130 @@ export default function Home() {
               complexity of building it yourself.
             </Typography>
 
-            <Grid2 container spacing={3} sx={{ mt: 2 }}>
-              <Grid2 xs={12} sm={6} md={3}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    textAlign: "center",
-                    transition: "transform 0.2s, box-shadow 0.2s",
-                    "&:hover": {
-                      transform: "translateY(-4px)",
-                      boxShadow: 4,
-                    },
-                  }}
-                >
-                  <CardContent>
-                    <Security
-                      sx={{
-                        fontSize: 48,
-                        color: "#6366f1",
-                        mb: 2,
-                      }}
-                    />
-                    <Typography variant="h6" gutterBottom fontWeight={600}>
-                      Secure
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Enterprise-grade security with industry best practices
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid2>
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "1fr",
+                  sm: "repeat(2, 1fr)",
+                  md: "repeat(4, 1fr)",
+                },
+                gap: 3,
+                mt: 2,
+              }}
+            >
+              <Card
+                sx={{
+                  height: "100%",
+                  textAlign: "center",
+                  transition: "transform 0.2s, box-shadow 0.2s",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 4,
+                  },
+                }}
+              >
+                <CardContent>
+                  <Security
+                    sx={{
+                      fontSize: 48,
+                      color: "#6366f1",
+                      mb: 2,
+                    }}
+                  />
+                  <Typography variant="h6" gutterBottom fontWeight={600}>
+                    Secure
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Enterprise-grade security with industry best practices
+                  </Typography>
+                </CardContent>
+              </Card>
 
-              <Grid2 xs={12} sm={6} md={3}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    textAlign: "center",
-                    transition: "transform 0.2s, box-shadow 0.2s",
-                    "&:hover": {
-                      transform: "translateY(-4px)",
-                      boxShadow: 4,
-                    },
-                  }}
-                >
-                  <CardContent>
-                    <Speed
-                      sx={{
-                        fontSize: 48,
-                        color: "#8b5cf6",
-                        mb: 2,
-                      }}
-                    />
-                    <Typography variant="h6" gutterBottom fontWeight={600}>
-                      Fast Setup
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Get up and running in minutes, not days
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid2>
+              <Card
+                sx={{
+                  height: "100%",
+                  textAlign: "center",
+                  transition: "transform 0.2s, box-shadow 0.2s",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 4,
+                  },
+                }}
+              >
+                <CardContent>
+                  <Speed
+                    sx={{
+                      fontSize: 48,
+                      color: "#8b5cf6",
+                      mb: 2,
+                    }}
+                  />
+                  <Typography variant="h6" gutterBottom fontWeight={600}>
+                    Fast Setup
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Get up and running in minutes, not days
+                  </Typography>
+                </CardContent>
+              </Card>
 
-              <Grid2 xs={12} sm={6} md={3}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    textAlign: "center",
-                    transition: "transform 0.2s, box-shadow 0.2s",
-                    "&:hover": {
-                      transform: "translateY(-4px)",
-                      boxShadow: 4,
-                    },
-                  }}
-                >
-                  <CardContent>
-                    <Code
-                      sx={{
-                        fontSize: 48,
-                        color: "#10b981",
-                        mb: 2,
-                      }}
-                    />
-                    <Typography variant="h6" gutterBottom fontWeight={600}>
-                      Developer-Friendly
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Beautiful components and APIs designed for developers
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid2>
+              <Card
+                sx={{
+                  height: "100%",
+                  textAlign: "center",
+                  transition: "transform 0.2s, box-shadow 0.2s",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 4,
+                  },
+                }}
+              >
+                <CardContent>
+                  <Code
+                    sx={{
+                      fontSize: 48,
+                      color: "#10b981",
+                      mb: 2,
+                    }}
+                  />
+                  <Typography variant="h6" gutterBottom fontWeight={600}>
+                    Developer-Friendly
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Beautiful components and APIs designed for developers
+                  </Typography>
+                </CardContent>
+              </Card>
 
-              <Grid2 xs={12} sm={6} md={3}>
-                <Card
-                  sx={{
-                    height: "100%",
-                    textAlign: "center",
-                    transition: "transform 0.2s, box-shadow 0.2s",
-                    "&:hover": {
-                      transform: "translateY(-4px)",
-                      boxShadow: 4,
-                    },
-                  }}
-                >
-                  <CardContent>
-                    <CheckCircle
-                      sx={{
-                        fontSize: 48,
-                        color: "#f59e0b",
-                        mb: 2,
-                      }}
-                    />
-                    <Typography variant="h6" gutterBottom fontWeight={600}>
-                      Production Ready
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Trusted by thousands of applications in production
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid2>
-            </Grid2>
+              <Card
+                sx={{
+                  height: "100%",
+                  textAlign: "center",
+                  transition: "transform 0.2s, box-shadow 0.2s",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                    boxShadow: 4,
+                  },
+                }}
+              >
+                <CardContent>
+                  <CheckCircle
+                    sx={{
+                      fontSize: 48,
+                      color: "#f59e0b",
+                      mb: 2,
+                    }}
+                  />
+                  <Typography variant="h6" gutterBottom fontWeight={600}>
+                    Production Ready
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Trusted by thousands of applications in production
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Box>
           </Paper>
         </Box>
 
@@ -326,7 +328,16 @@ export default function Home() {
             >
               What's Included
             </Typography>
-            <Grid2 container spacing={3}>
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "1fr",
+                  sm: "repeat(2, 1fr)",
+                },
+                gap: 3,
+              }}
+            >
               {[
                 "Next.js 16 App Router integration",
                 "Clerk authentication middleware",
@@ -335,16 +346,14 @@ export default function Home() {
                 "Responsive design",
                 "Production-ready setup",
               ].map((feature, index) => (
-                <Grid2 xs={12} sm={6} key={index}>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                    <CheckCircle sx={{ color: "#10b981", fontSize: 28 }} />
-                    <Typography variant="body1" sx={{ fontSize: "1.1rem" }}>
-                      {feature}
-                    </Typography>
-                  </Box>
-                </Grid2>
+                <Box key={index} sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+                  <CheckCircle sx={{ color: "#10b981", fontSize: 28 }} />
+                  <Typography variant="body1" sx={{ fontSize: "1.1rem" }}>
+                    {feature}
+                  </Typography>
+                </Box>
               ))}
-            </Grid2>
+            </Box>
           </Paper>
         </Box>
 
