@@ -5,12 +5,12 @@ import {
   Box,
   Typography,
   Button,
-  Grid,
   Card,
   CardContent,
   Stack,
   Paper,
 } from "@mui/material";
+import Grid2 from "@mui/material/Grid2";
 import {
   SignInButton,
   SignUpButton,
@@ -179,8 +179,8 @@ export default function Home() {
               complexity of building it yourself.
             </Typography>
 
-            <Grid container spacing={3} sx={{ mt: 2 }}>
-              <Grid item xs={12} sm={6} md={3}>
+            <Grid2 container spacing={3} sx={{ mt: 2 }}>
+              <Grid2 xs={12} sm={6} md={3}>
                 <Card
                   sx={{
                     height: "100%",
@@ -208,9 +208,9 @@ export default function Home() {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Grid>
+              </Grid2>
 
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid2 xs={12} sm={6} md={3}>
                 <Card
                   sx={{
                     height: "100%",
@@ -238,9 +238,9 @@ export default function Home() {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Grid>
+              </Grid2>
 
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid2 xs={12} sm={6} md={3}>
                 <Card
                   sx={{
                     height: "100%",
@@ -268,9 +268,9 @@ export default function Home() {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Grid>
+              </Grid2>
 
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid2 xs={12} sm={6} md={3}>
                 <Card
                   sx={{
                     height: "100%",
@@ -298,8 +298,8 @@ export default function Home() {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Grid>
-            </Grid>
+              </Grid2>
+            </Grid2>
           </Paper>
         </Box>
 
@@ -326,7 +326,7 @@ export default function Home() {
             >
               What's Included
             </Typography>
-            <Grid container spacing={3}>
+            <Grid2 container spacing={3}>
               {[
                 "Next.js 16 App Router integration",
                 "Clerk authentication middleware",
@@ -335,16 +335,16 @@ export default function Home() {
                 "Responsive design",
                 "Production-ready setup",
               ].map((feature, index) => (
-                <Grid item xs={12} sm={6} key={index}>
+                <Grid2 xs={12} sm={6} key={index}>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
                     <CheckCircle sx={{ color: "#10b981", fontSize: 28 }} />
                     <Typography variant="body1" sx={{ fontSize: "1.1rem" }}>
                       {feature}
                     </Typography>
                   </Box>
-                </Grid>
+                </Grid2>
               ))}
-            </Grid>
+            </Grid2>
           </Paper>
         </Box>
 
